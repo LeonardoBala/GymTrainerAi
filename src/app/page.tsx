@@ -1,6 +1,5 @@
 "use Client";
-import { SignedIn } from "@clerk/clerk-react";
-import { SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/nextjs";
 
 const HomePage = () => {
   return (
