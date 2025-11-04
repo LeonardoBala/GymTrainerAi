@@ -3,7 +3,7 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import ConvexClerkProvider from "@/providers/ConvexClerkProvider";
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import  Footer  from "@/components/Footer";
 
 const geistSans = Inter({
   subsets: ["latin"],
@@ -34,9 +34,8 @@ export default function RootLayout({
         <Navbar />
 
         {/* Background that is GRID */}
-        <div className="fixed inset-0 -z-1">
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background"></div>
-          <div className="absolute inset-0 bg-[linear-gradient(var(--cyber-grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--cyber-grid-color)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+        <div className="fixed inset-0 -z-1 animated-gradient-background">
+        {/* L'overlay del gradiente trasparente non è più necessario con il nuovo sfondo animato */}
         </div>
 
         <main className="pt-24 flex-grow">

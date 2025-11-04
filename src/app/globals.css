@@ -235,3 +235,25 @@
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
+
+/* Moving Background */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-background {
+  /* Nuova palette: Prevalentemente nero e blu scuro. Il bianco appare solo brevemente. */
+  background: linear-gradient(-45deg, #000000, #0a192f, #000000, #1a2b42, #000000, #0a192f);
+  background-size: 400% 400%; 
+  animation: gradient-animation 20s ease infinite; /* Aumentato a 20s per un movimento super-smooth e discreto */
+  width: 100%;
+  height: 100%;
+}
